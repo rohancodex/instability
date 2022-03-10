@@ -25,7 +25,9 @@ const Navbar = (props) => {
           )}
 
           {isDesktopOrLaptop && (
-            <p className="text-xl font-medium flex justify-center">About</p>
+            <p className="text-xl font-medium flex justify-center lg:pr-5">
+              About
+            </p>
           )}
 
           {/* Theme toggle */}
