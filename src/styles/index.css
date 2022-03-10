@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+
+:root {
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  --nord10: #5e81ac;
+  --background: #eceff4;
+  --text-primary: #2e3440;
+  --text-secondary: #3b4252;
+  --accent: #5e81ac;
+}
+[data-theme="dark"] {
+  --background: #2e3440;
+  --text-primary: #eceff4;
+  --text-secondary: #e5e9f0;
+  --accent: #5e81ac;
+}
+.app {
+  background-color: var(--background);
+  color: var(--text-primary);
+  height: 100vh;
+  transition: all 0.5s;
+}
+nav {
+  font-family: "Rubik", sans-serif;
+}
+
+.day,
+.night {
+  fill: var(--text-primary);
+}
+.hamburger-menu {
+  height: 100vh;
+  animation: 1s fadeIn;
+}
