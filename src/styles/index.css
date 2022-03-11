@@ -41,3 +41,23 @@ nav {
   height: 100vh;
   animation: 1s fadeIn;
 }
+
+@media (max-device-width: 375px) {
+  #title {
+    font-size: 3rem;
+  }
+  .sub-heading {
+    font-size: 1rem;
+  }
+}
+#searchbar {
+  outline: none;
+  background-color: var(--background);
+}
+.searchline {
+  height: 2px;
+  width: 230px;
+  border-width: 0;
+  color: var(--text-primary);
+  background-color: var(--text-primary);
+}

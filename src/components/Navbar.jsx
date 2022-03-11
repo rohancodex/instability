@@ -8,7 +8,7 @@ const Navbar = (props) => {
   const isDesktopOrLaptop = useMediaQuery({ query: "(min-width: 1224px)" });
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
   return (
-    <nav>
+    <nav className="container mx-auto">
       <div className="p-8 flex justify-between items-center">
         <h2 className="text-2xl font-semibold">Instability</h2>
         <div className="flex ">
