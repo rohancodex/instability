@@ -3,6 +3,7 @@ import "./styles/index.css";
 import Navbar from "./components/Navbar.jsx";
 import Header from "./components/Header";
 import useLocalStorage from "./hooks/useLocalStorage";
+import ProfileView from "./components/ProfileView";
 
 function App() {
   const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -19,8 +20,8 @@ function App() {
   return (
     <div className="app" data-theme={theme}>
       <Navbar theme={switchTheme} />
-
       <Header />
+      <ProfileView />
     </div>
   );
 }

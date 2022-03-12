@@ -23,10 +23,19 @@
   --text-secondary: #e5e9f0;
   --accent: #5e81ac;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: var(--text-primary);
+}
 .app {
   background-color: var(--background);
   color: var(--text-primary);
-  height: 100vh;
+
   transition: all 0.5s;
 }
 nav {
@@ -60,4 +69,7 @@ nav {
   border-width: 0;
   color: var(--text-primary);
   background-color: var(--text-primary);
+}
+.profile-pic {
+  border-radius: 50%;
 }
