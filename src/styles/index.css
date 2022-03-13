@@ -17,12 +17,14 @@
   --text-secondary: #3b4252;
   --accent: #5e81ac;
 }
+
 [data-theme="dark"] {
   --background: #2e3440;
   --text-primary: #eceff4;
   --text-secondary: #e5e9f0;
   --accent: #5e81ac;
 }
+
 h1,
 h2,
 h3,
@@ -32,12 +34,14 @@ h6,
 p {
   color: var(--text-primary);
 }
+
 .app {
   background-color: var(--background);
   color: var(--text-primary);
 
   transition: all 0.5s;
 }
+
 nav {
   font-family: "Rubik", sans-serif;
 }
@@ -46,6 +50,7 @@ nav {
 .night {
   fill: var(--text-primary);
 }
+
 .hamburger-menu {
   height: 100vh;
   animation: 1s fadeIn;
@@ -59,10 +64,12 @@ nav {
     font-size: 1rem;
   }
 }
+
 #searchbar {
   outline: none;
   background-color: var(--background);
 }
+
 .searchline {
   height: 2px;
   width: 230px;
@@ -70,6 +77,7 @@ nav {
   color: var(--text-primary);
   background-color: var(--text-primary);
 }
+
 .profile-pic {
   border-radius: 50%;
 }

@@ -2,7 +2,7 @@ import ProfileBadge from "./ProfileBadge";
 
 function ProfileView() {
   return (
-    <div className="container mx-auto grid grid-cols-2 justify-center gap-2 md:grid-cols-3 lg:grid-cols-4 ">
+    <div className="container mx-auto grid grid-cols-2 justify-center lg:justify-center  md:grid-cols-3 lg:grid-cols-5 ">
       <ProfileBadge />
       <ProfileBadge />
       <ProfileBadge />
@@ -11,4 +11,5 @@ function ProfileView() {
     </div>
   );
 }
+
 export default ProfileView;

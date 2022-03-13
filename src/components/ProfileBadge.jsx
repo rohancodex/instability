@@ -10,4 +10,5 @@ function ProfileBadge() {
     </div>
   );
 }
+
 export default ProfileBadge;
