@@ -38,7 +38,7 @@ function Searchbar() {
         <BiSearchAlt className="mt-11 ml-auto mr-2 h-5 w-5 lg:ml-0 lg:mt-0 " />
         <input
           id="searchbar"
-          className="mt-10 w-40 mr-auto lg:m-0"
+          className="mt-10 w-44 mr-auto lg:m-0 "
           type="search"
           placeholder="Enter username here"
         />
