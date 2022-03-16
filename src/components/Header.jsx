@@ -6,7 +6,7 @@ import { BiSearchAlt } from "react-icons/bi";
 
 const Header = () => {
   return (
-    <header className="lg:grid lg:grid-cols-2  lg:my-24 container mx-auto py-8 px-10 flex flex-col justify-center content-center">
+    <header className="lg:grid lg:grid-cols-2 lg:my-24 container mx-auto py-8 px-10 flex flex-col justify-center content-center">
       <Lottie
         className="h-64 w-64 m-auto lg:h-96 lg:w-96"
         loop={false}
@@ -16,13 +16,13 @@ const Header = () => {
       <div className="lg:order-first">
         <h1
           id="title"
-          className="text-center font-bold text-6xl py-5 lg:text-left"
+          className="text-center font-bold text-6xl py-5 lg:text-left lg:text-8xl"
         >
           Instability
         </h1>
         <h2
           id="sub-heading"
-          className="text-center font-light text-2xl lg:text-left"
+          className="text-center font-light text-2xl lg:text-left lg:my-5"
         >
           Browse instagram without it shouting at you to log in
         </h2>
@@ -38,7 +38,7 @@ function Searchbar() {
         <BiSearchAlt className="mt-11 ml-auto mr-2 h-5 w-5 lg:ml-0 lg:mt-0 " />
         <input
           id="searchbar"
-          className="mt-10 w-44 mr-auto lg:m-0 "
+          className="font-light mt-10 w-44 mr-auto lg:m-0 lg:text-2xl"
           type="search"
           placeholder="Enter username here"
         />

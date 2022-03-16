@@ -23,7 +23,7 @@ function App() {
     <div className="app" data-theme={theme}>
       <Navbar theme={switchTheme} />
       <Header />
-      <ProfileView />
+      {/* <ProfileView /> */}
       <Features />
       <Footer />
     </div>
