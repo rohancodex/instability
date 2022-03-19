@@ -2,6 +2,7 @@ import { React, useState, useLayoutEffect } from "react";
 import "../styles/index.css";
 import Hamburger from "hamburger-react";
 import { useMediaQuery } from "react-responsive";
+import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
   const [isOpen, setOpen] = useState(false);
@@ -10,7 +11,9 @@ const Navbar = (props) => {
   return (
     <nav className="container mx-auto">
       <div className="p-8 flex justify-between items-center">
-        <h2 className="text-2xl font-semibold">Instability</h2>
+        <Link to="/">
+          <h2 className="text-2xl font-semibold">Instability</h2>
+        </Link>
         <div className="flex ">
           {isTabletOrMobile && (
             <Hamburger
@@ -25,9 +28,11 @@ const Navbar = (props) => {
           )}
 
           {isDesktopOrLaptop && (
-            <p className="text-xl font-medium flex justify-center lg:pr-5">
-              About
-            </p>
+            <Link to="/about">
+              <p className="text-xl font-medium flex justify-center lg:pr-5">
+                About
+              </p>
+            </Link>
           )}
 
           {/* Theme toggle */}

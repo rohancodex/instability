@@ -6,24 +6,15 @@ import useLocalStorage from "./hooks/useLocalStorage";
 import ProfileView from "./components/ProfileView";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
+import useTheming from "./hooks/useTheme";
 
 function App() {
-  const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-  const [theme, setTheme] = useLocalStorage(
-    "theme",
-    defaultDark ? "dark" : "light"
-  );
-  console.log(theme);
-  const switchTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-  };
+  const [switchTheme, theme] = useTheming();
   return (
     <div className="app" data-theme={theme}>
       <Navbar theme={switchTheme} />
       <Header />
-      {/* <ProfileView /> */}
+      <ProfileView />
       <Features />
       <Footer />
     </div>
