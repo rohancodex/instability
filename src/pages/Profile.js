@@ -1,8 +1,8 @@
-import Features from "../components/Features";
-import Header from "../components/Header";
+// import Features from "../components/Features";
+// import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 
-import ProfileView from "../components/ProfileView";
+// import ProfileView from "../components/ProfileView";
 import useTheming from "../hooks/useTheme";
 import "../styles/profile.css";
 function Profile() {

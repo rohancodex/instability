@@ -1,8 +1,8 @@
-import { React, useState } from "react";
+// import { React, useState } from "react";
 import "./styles/index.css";
 import Navbar from "./components/Navbar.jsx";
 import Header from "./components/Header";
-import useLocalStorage from "./hooks/useLocalStorage";
+// import useLocalStorage from "./hooks/useLocalStorage";
 import ProfileView from "./components/ProfileView";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
