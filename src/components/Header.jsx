@@ -32,17 +32,37 @@ const Header = () => {
   );
 };
 function Searchbar() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("You have submitted the form.");
+
+    const url = `https://glacial-stream-56779.herokuapp.com/https://www.instagram.com/shivaleekaoberoi/?__a=1`;
+
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        // prepareImages(
+        //   data["graphql"]["user"]["edge_owner_to_timeline_media"]["edges"]
+        // );
+        console.log(data);
+      })
+      .catch((error) => console.log(error));
+  };
+
   return (
     <div className="mx-auto lg:mx-0">
-      <div className="flex flex-row lg:mt-10">
-        <BiSearchAlt className="mt-11 ml-auto mr-2 h-5 w-5 lg:ml-0 lg:mt-0 " />
-        <input
-          id="searchbar"
-          className="font-light mt-10 w-48 mr-auto lg:m-0 lg:text-2xl lg:w-64"
-          type="search"
-          placeholder="Enter username here"
-        />
-      </div>
+      <form onSubmit={handleSubmit}>
+        <div className="flex flex-row lg:mt-10">
+          <BiSearchAlt className="mt-11 ml-auto mr-2 h-5 w-5 lg:ml-0 lg:mt-0 " />
+          <input
+            id="searchbar"
+            className="font-light mt-10 w-48 mr-auto lg:m-0 lg:text-2xl lg:w-64"
+            type="search"
+            placeholder="Enter username here"
+          />
+          <button type="submit">Submit</button>
+        </div>
+      </form>
       <hr className="searchline my-2 mx-auto lg:mx-0 lg:w-72" />
     </div>
   );
